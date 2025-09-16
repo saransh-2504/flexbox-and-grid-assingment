@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #25d925;
+            color: white;
+        }
+        nav{
+            display: flex;
+            gap: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .content{
+            display: flex;
+            gap: 20px;
+
+        }
+        aside{
+            height:200px;
+            width: 100px;
+            background-color: lightgray;
+        }
+        main{
+            margin-left: 40px;
+            padding: 20px;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background-color: rgb(239, 246, 246);
+            gap: 10px;
+            height: 80vh;
+            width: 100vw;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            border: 3px solid black;
+            box-shadow:6px 6px 5px grey;
+        }
+        .item2{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border: 3px solid black;
+            box-shadow:6px 6px 5px grey;
+        }
+        .item3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            border: 3px solid black;
+            box-shadow:6px 6px 5px grey;
+        }
+        .item4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            border: 3px solid black;
+            box-shadow:6px 6px 5px grey;
+        }
+        .item5{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            border: 3px solid black;
+            box-shadow:6px 6px 5px grey;
+        }
+        .item6{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            border: 3px solid black;
+            box-shadow:6px 6px 5px grey;
+        }
+        
+        #foot{
+            background-color: lightgray;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        #leg{
+            background-color: rgb(10, 227, 14);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            gap: 20px;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yummy Recipes</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+        </nav>
+    </header>
+    <div class="content">
+    <aside>
+        <img src="recipe.jpg" alt="Recipe Image">
+    </aside>
+    <main>
+        <h2>Featured Recipe</h2>
+        <p>A Delicious dish you must try today!</p>
+    </main>
+    </div>
+    <section id="container">
+        <section class="item1">Recipe 1</section>
+        <section class="item2">Recipe 2</section>
+        <section class="item3">Recipe 3</section>
+        <section class="item4">Recipe 4</section>
+        <section class="item5">Recipe 5</section>
+        <section class="item6">Recipe 6</section>
+    </section>
+    <footer>
+        <div id="foot">
+        <span><a href="#">Breakfast</a></span>
+        <span><a href="#">Lunch</a></span>
+        <span><a href="#">Dinner</a></span>
+        <span><a href="#">Dessert</a></span>
+        </div>
+        <div id="leg">
+            <span><a href="#">&#128222 Contact</a></span>
+            <span><a href="#">&#127760 Social</a></span>
+        </div>
+    </footer>
+</body>
+</html>
